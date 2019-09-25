@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Equipo edición y diseño — Checklist web</title>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+  <style type="text/css">
+  	.details-para {display: block;}
+  </style>
+  <!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<!-- Google -->
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#DF0101">
+	<!-- Apple -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="BlitzDesign">
+	<link rel="apple-touch-icon" href="assets/icons/icon-152x152.png">
+	<!-- MS -->
+	<meta name="msapplication-TileImage" content="assets/icons/icon-144x144.png">
+	<meta name="msapplication-TileColor" content="#DF0101">
+	<meta name="application-name" content="BlitzDesign">
+</head>
+
+<body>
+  <header>
+    <img class="header-icon" alt="Dirección General de Planeamiento Educativo" src="img/dupla.png"/>
+    
+    <h1>Checklist de materiales disciplinares</h1>
+
+    <p class="lead">Recordemos que esta lista de verificación es útil para genera mejores materiales y minimizar el margen de error.</p> 
+    
+    <p class="lead">Hacerlo con ojo crítico y concentración es clave para que el resto de los pasos previos que llevo a esta instancia, no se vea opacado.</p>
+
+    <p class="lead">Si encontrar algun error en este <i>checklist</i> o queres recomendar una modificación no dudes en avisar.</p>
+  </header>
+
+<button type="button" class="helper">Tengo un material sin ePub</button>
+
+  <main>
+
+    <form id="checklist" name="checklist">
+      <section id="semantics-list">
+      <div class="wrapper">
+      	    <img src="img/tapa.png">
+        <h2 id="semantics-heading">Tapa</h2>
+
+        <label>
+        	<input type="checkbox" name="semantics" value="avatares"/>
+        	<span class="checker"></span>
+        	<span class="summary">Chequear avatares de tapa y contratapa</span>
+        	<span class="details">
+          	<span class="details-para">Que sean los mismos y que contrasten con el color de fondo de la propuesta.</span>
+
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="semantics" value="plaqueta-nes"/>
+        	<span class="checker"></span>
+        	<span class="summary">Revisar plaqueta de Profundización NES</span>
+        	<span class="details">
+        		<span class="details-para">Que la plaqueta de Profundización NES tenga un punto intermedio.</span>
+
+        	</span>
+        </label>
+        
+      </div>
+      </section>
+
+      <section id="typo-list">
+      <div class="wrapper">
+      		<img src="img/interior.png">
+        <h2 id="typo-heading">General</h2>
+        
+        <label>
+        	<input type="checkbox" name="typo" value="cabezal"/>
+        	<span class="checker"></span>
+        	<span class="summary">Revisar cabezales al interior del materiales</span>
+        	<span class="details">
+        		<span class="details-para">Que este correcto el título, la tipografía y el color.</span>
+        	</span>
+        </label> 
+        
+        <label>
+        	<input type="checkbox" name="typo" value="membrete"/>
+        	<span class="checker"></span>
+        	<span class="summary">Revisar membrete</span>
+        	<span class="details">
+        		<span class="details-para">Que no aparezca pisado y este plantado en todas las página.</span>		
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="typo" value="vista-anterior"/>
+        	<span class="checker"></span>
+        	<span class="summary">Revisar botón "Volver a vista anterior"</span>
+        	<span class="details">
+        		<span class="details-para">Que funcione y no cambie de color al hacer clic.</span>
+        	</span>
+        </label>
+        
+      </div>
+      </section>
+
+
+      <section id="colors-list">
+      <div class="wrapper">
+
+        <h2 id="colors-heading">Colors</h2>
+        
+        <label>
+        	<input type="checkbox" name="colors" value="grayscale"/>
+        	<span class="checker"></span>
+        	<span class="summary">Don’t forget grayscale</span>
+        	<span class="details">
+        		<span class="details-para">Dedicated eReaders are using eInk, which means colors will be converted to 16 shades of gray. It’s not a bad idea to check if your eBook, especially images, render well in grayscale.</span>
+        		
+        		<span class="details-para">Hopefully, your desktop <abbr title="Operating System">OS</abbr> can help you do that. If you’re using a Mac, for instance, <a href="https://support.apple.com/kb/PH18394?locale=en_US">go to the Display Pane of the Accessibility Preferences</a>.</span>
+        	</span>
+        </label> 
+        
+        <label>
+        	<input type="checkbox" name="colors" value="bgColor"/>
+        	<span class="checker"></span>
+        	<span class="summary">Try to avoid background colors</span>
+        	<span class="details">
+        		<span class="details-para">User settings once again.</span>
+        		
+        		<span class="details-para">Reading Systems will usually remove your background color in night mode so maybe you should not rely on it…</span>
+        	</span>
+        	</label> 
+        	
+        	<label>
+        		<input type="checkbox" name="colors" value="black"/>
+        		<span class="checker"></span>
+        		<span class="summary">Black is white, leverage inheritance</span>
+        		<span class="details">
+        			<span class="details-para">In night mode, dark becomes light, which is why you should never ever specify colors from <code>#000</code> to <code>#666</code> –&nbsp;it’s even written in Kindle Publishing Guidelines. <abbr title="For Your Information">FYI</abbr>, InDesign exports those values.</span>
+        			
+        			<span class="details-para">So if you need black/white, use <code>color:inherit</code>, <code>border-color:currentColor</code>, <code>fill:currentColor</code>, etc. All of those will map to the current text color Reading Systems set.</span>         			
+        	</span>
+        	</label>
+        	
+        	<label>
+        		<input type="checkbox" name="colors" value="colorBlindness"/>
+        		<span class="checker"></span>
+        		<span class="summary">Pick your colors with color-blindness in mind</span>
+        		<span class="details">
+        			<span class="details-para">Disabled readers love eBooks, don’t let them down.</span>
+        			
+        			<span class="details-para">Avoid red/green and red/black combinations, use patterns in addition to colors in charts, beware of text on noisy backgrounds, ensure contrast levels are sufficient, etc.</span> 
+        			
+        			<span class="details-para"><a href="http://kb.daisy.org/publishing/docs/css/color.html">The Daisy’s Knowledge Base</a> is an invaluable resource when it comes to accessibility.</span>
+        	</span>
+        	</label>
+        </div>
+      </section>
+
+
+      <section id="images-list">
+      <div class="wrapper">
+        <h2 id="images-heading">Images</h2>
+        
+        <label>
+        	<input type="checkbox" name="images" value="imageMarkup"/>
+        	<span class="checker"></span>
+        	<span class="summary">Use figure and figcaption</span>
+        	<span class="details">
+        		<span class="details-para">Those two tags are meant for each other and this is why some Reading Systems will treat them in a very special way.</span>
+        		
+        		<span class="details-para">While you’re at it, do not hesitate to add <code>page-break-inside:avoid</code> in your CSS. Sure, it won’t work in Kindle but we all know Kindle is a freaking jerk.</span>
+        		
+        		<span class="details-para">And maybe you could try <a href="https://medium.com/@jiminypan/image-wizardry-in-ebooks-3ea96064d0a6#.wh15olc8f" title="Image Wizardry in eBooks">resizing portrait images depending on the font size</a> the user has set?</span>        		
+        	</span>
+        </label>
+
+        <label>
+        	<input type="checkbox" name="images" value="alt"/>
+        	<span class="checker"></span>
+        	<span class="summary">Ensure images have alternative text when needed</span>
+        	<span class="details">
+        		<span class="details-para">Decorative images and images which captions tell it all don’t need alternative text, others images must. Please read this <a href="https://www.w3.org/WAI/tutorials/images/">accessibility tutorial</a> if you’re not sure how to manage that.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="images" value="relativeImages"/>
+        	<span class="checker"></span>
+        	<span class="summary">Use relative units to lay out images</span>
+        	<span class="details">
+        		<span class="details-para">A lot of Reading Systems don’t ship with default styles for images, which means overflow is very likely to happen. You should at least use <code>max-width:100%</code>.</span>
+        		
+        		<span class="details-para">And since you can’t trust pixels –&nbsp;yep, InDesign is exporting this plain wrong by default&nbsp;– you should use <code>%</code> for landscape images and <code>vh</code>, with a <code>%</code> fallback for portrait images.</span>      		
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="images" value="objectFit"/>
+        	<span class="checker"></span>
+        	<span class="summary">Ensure images’ ratio is kept with one line of CSS</span>
+        	<span class="details">
+        		<span class="details-para">Just use <code>object-fit:contain</code> from now on. Thanks!</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="images" value="nightMode"/>
+        	<span class="checker"></span>
+        	<span class="summary">Consider the rendering of your images in night mode</span>
+        	<span class="details">
+        		<span class="details-para">Transparent PNG + night mode. Nuff Said.</span>
+        	</span>
+        </label>
+      </div>
+      </section>
+
+
+      <section id="css-list">
+      <div class="wrapper">
+        <h2 id="css-heading"><abbr title="Cascading Style Sheets">CSS Design</abbr></h2>
+  
+        <label>
+        	<input type="checkbox" name="css" value="id"/>
+        	<span class="checker"></span>
+        	<span class="summary">Try to avoid styling based on <code>id</code></span>
+        	<span class="details">
+        		<span class="details-para"><a title="Reading System Overrides — EPUB 3.1 specs" href="http://www.idpf.org/epub/31/spec/epub-contentdocs.html#sec-css-rs-overrides">Since user settings basically are a stylesheet</a>, ID selectors may screw user settings up in a spectacular way.</span>
+        		
+        		<span class="details-para">Of course, if something critical should not abide by user settings, <code>id</code> can be a solution.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="css" value="important"/>
+        	<span class="checker"></span>
+        	<span class="summary">Try to avoid using <code>!important</code></span>
+        	<span class="details">
+        		<span class="details-para">See previous point.</span>
+        		        		
+        		<span class="details-para">Also, it may bite you in the ass at some point because you must manage the cascade in a constantly growing <abbr title="Cascading Style Sheets">CSS</abbr>.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="css" value="relativeCSS"/>
+        	<span class="checker"></span>
+        	<span class="summary">Ensure relative units are used in reflow</span>
+        	<span class="details">
+        		<span class="details-para">Don’t use <code>px</code> or <code>pt</code> because they will break the font size user setting in an awful lot of apps and devices. Unitless line-heights are also a good idea.</span>        		
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="css" value="lock"/>
+        	<span class="checker"></span>
+        	<span class="summary">Ensure what shouldn’t reflow with font size doesn’t</span>
+        	<span class="details">
+        		<span class="details-para">Page and horizontal margins shouldn’t increase with font size since the bigger the font size, the smaller the container. Prefer <code>%</code>.</span>        		        		
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="css" value="family"/>
+        	<span class="checker"></span>
+        	<span class="summary">Ensure fonts of the same family are the same <code>font-family</code></span>
+        	<span class="details">
+        		<span class="details-para">Regular, italic, bold and bold italic fonts should be the same exact <code>font-family</code>.</span>
+        		
+        		<span class="details-para">If each is a specific <code>font-family</code>, then the dedicated user setting will be screwed up, italics and bold won’t be replaced in some Reading Systems and users will hate you.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="css" value="inlineBlock"/>
+        	<span class="checker"></span>
+        	<span class="summary">Try to avoid <code>inline-block</code></span>
+        	<span class="details">
+        		<span class="details-para">Contents will be cut off because of pagination. With <code>inline-block</code> comes great responsibility –&nbsp;that’s yet another thing InDesign does badly since it’s used for images’ styling.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="css" value="absolute"/>
+        	<span class="checker"></span>
+        	<span class="summary">Beware of absolute positioning in reflow</span>
+        	<span class="details">
+        		<span class="details-para">It’s stated in the <a title="Content Conformance — EPUB 3.1 Specifications" href="http://www.idpf.org/epub/31/spec/epub-contentdocs.html#sec-css-content-conf">specifications</a>, which tends to prove this may be a critical issue we should fix first.</span>        		
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="css" value="issues"/>
+        	<span class="checker"></span>
+        	<span class="summary">Avoid <code>-webkit-text-size-adjust</code> and <code>text-rendering</code> like the plague</span>
+        	<span class="details">
+        		<span class="details-para">The former breaks the font size setting in iBooks iOS.</span>
+        		
+        		<span class="details-para">The latter breaks font rendering in some Kindle devices (all text is rendered as “question marks in a box”).</span>
+        	</span>
+        </label>
+      </div>
+      </section>
+
+
+      <section id="interactivity-list">
+      <div class="wrapper">
+        <h2 id="interactivity-heading">Interactivity</h2>
+                        
+        <label>
+        	<input type="checkbox" name="interactivity" value="links"/>
+        	<span class="checker"></span>
+        	<span class="summary">Ensure links are perceived as links</span>
+        	<span class="details">
+        		<span class="details-para"><a title="W3C Wiki" href="https://www.w3.org/wiki/Styling_lists_and_links#Styling_Links">Styling links is complex</a>. It’s all the more complex that it can bloat your ebook’s “pages” (visual weight, incorrect manipulation when trying to navigate, etc.).</span>
+        		
+        		<span class="details-para">Maybe you could tone them down so that they don’t disrupt the reading process, maybe you could treat them as footnotes if there are too many in your eBook, etc.</span>
+        		
+        		<span class="details-para">In any case, make sure users can perceive links as links when scanning the page.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="interactivity" value="footnotes"/>
+        	<span class="checker"></span>
+        	<span class="summary">Don’t hide pop-up footnotes</span>
+        	<span class="details">
+        		<span class="details-para">A long long time ago, in an iBooks.app far far away, the pattern of pop-up footnotes was introduced to eBook Designers. <a title="iBooks Asset Guide" href="https://help.apple.com/itc/booksassetguide/e3?lang=en#/itccf8ecf5c8">And then we discovered</a> we could use <code>&lt;aside&gt;</code> to hide or <code>&lt;div&gt;</code> to show the footnote in the normal reading view.</span>
+        		
+        		<span class="details-para">Turns out the footnote is not accessible to assistive technology when hidden… so you’d better keep it in the normal reading view using <code>&lt;div&gt;</code> or <code>&lt;p&gt;</code>.</span>
+        		
+        		<span class="details-para">¯\_(ツ)_/¯</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="interactivity" value="hideShow"/>
+        	<span class="checker"></span>
+        	<span class="summary">Don’t use the hide/show pattern (collapse/expand contents)</span>
+        	<span class="details">
+        		<span class="details-para">It’s currently incompatible with pagination, and this impacts the <code>&lt;details&gt;</code> tag as well.</span>
+        		
+        		<span class="details-para">Unfortunately, Reading Systems won’t automatically update pagination when collapsing/expanding contents, which means they will overflow at the end of the XHTML file. And there’s not bulletproof way to force a recalc at the moment.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="interactivity" value="override"/>
+        	<span class="checker"></span>
+        	<span class="summary">Ensure your interactions don’t override defaults</span>
+        	<span class="details">
+        		<span class="details-para">Got two words for you: User eXperience.</span>
+        		
+        		<span class="details-para">(Do not hesitate to <code>preventDefault()</code> so that Reading Systems’ UI don’t flash at every interaction though because this is freaking irritating.)</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="interactivity" value="bloat"/>
+        	<span class="checker"></span>
+        	<span class="summary">Ensure your interactions are not bloat</span>
+        	<span class="details">
+        		<span class="details-para">An interaction can turn into a useless gimmick. And that can become frustrating because it doesn’t add value to the eBook but disrupts the reading experience.</span>        		
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="interactivity" value="inputs"/>
+        	<span class="checker"></span>
+        	<span class="summary">Ensure your scripts support all inputs</span>
+        	<span class="details">
+        		<span class="details-para">We’re living in an input-agnostic world, devices can have a touchscreen, a mouse and a keyboard at the same time.</span>
+        		
+        		<span class="details-para">You’d better design your scripts for <code>touchend</code>, <code>click</code> and <code>keyup</code> (and you may soon have to implement speech recognition as well).</span>
+        		
+        		<span class="details-para">By the way, iBooks on MacOS is already private-shaming you with a big fat notification if your eBook only supports touch events.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="interactivity" value="usability"/>
+        	<span class="checker"></span>
+        	<span class="summary">Make your scripts accessible</span>
+        	<span class="details">
+        		<span class="details-para">It’s all about how you design scripts. Check <a href="https://www.w3.org/TR/wai-aria-practices-1.1/">ARIA Authoring practices</a> for details.</span>
+        		
+        		<span class="details-para">Please make sure you’re using the correct element for the job. If you need a button, create a <code>button</code> element, not a <code>span</code>. A button ships with accessibility: it is focusable, actionable, etc.</span>
+        		
+        		<span class="details-para">Then implement ARIA attributes: <code>aria-label</code>, <code>aria-hidden</code>, <code>aria-live</code>, <code>role</code> &amp;&nbsp;al. can dramatically enhance the usability of your widgets.</span>
+        	</span>
+				</label>
+				
+				<label>
+        	<input type="checkbox" name="interactivity" value="webstorage"/>
+        	<span class="checker"></span>
+        	<span class="summary">Prefix your storage items, and do not ever clear Web storage</span>
+        	<span class="details">
+        		<span class="details-para">In theory, <a title="Scripted Content Security — EPUB 3.1 Specifications" href="http://www.idpf.org/epub/31/spec/epub-contentdocs.html#sec-scripted-content-security">if you take a look at the EPUB specifications</a>, “Reading Systems that do allow data to be stored have to ensure that it is not made available to other unrelated documents.”</span>
+        		
+        		<span class="details-para">In practice, it is not the case in a lot of apps, which means you will share storage with all other publications. In other words, should you use <code>localStorage.clear()</code> to remove all the items you’ve set, it will just clear the storage for all EPUB files, and other developers won’t be able to retrieve theirs.</span>
+        		
+        		<span class="details-para">It’s also important you prefix the items you set – ideally use one prefix per publication –, in order to avoid concurrent access to same-name items. By doing this, you’ll also be able to get and remove those items, since <code>localStorage.clear()</code> is a no-go.</span>
+        	</span>
+        </label>
+      </div>
+      </section>
+
+
+      <section id="pe-list">
+      <div class="wrapper">
+        <h2 id="pe-heading">Progressive Enhancement</h2>
+                
+        <label>
+        	<input type="checkbox" name="pe" value="enhance"/>
+        	<span class="checker"></span>
+        	<span class="summary">Enhance, don’t degrade</span>
+        	<span class="details">
+        		<span class="details-para">Building on a solid bedrock is a lot easier than removing parts of a space rocket in-flight. You should design for the lowest common denominator then enhance progressively.</span>
+        		
+        		<span class="details-para"><a href="http://www.booknetcanada.ca/blog/2016/12/12/progressive-enhancements-make-books-progressive">We can actually do quite a lot</a> since Reading Systems are build on top of browsers’ rendering engines. But it’s up to you to improve the User eXperience depending on the features those engines support.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="pe" value="smallFirst"/>
+        	<span class="checker"></span>
+        	<span class="summary">Adopt a small-first strategy</span>
+        	<span class="details">
+        		<span class="details-para">Readers are less likely to read on a 24-inch display than a smartphone, eReader or tablet. Heck, we should probably adopt an eInk-first approach to designing eBooks.</span>
+        		
+        		<span class="details-para">And don’t forget some users may boost the font size to no less than 36&nbsp;pt. In other words, by designing for the really small screens first, you’re likely to avoid quite a lot of issues.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="pe" value="supports"/>
+        	<span class="checker"></span>
+        	<span class="summary">Leverage feature queries (<code>@supports</code>)</span>
+        	<span class="details">
+        		<span class="details-para"><code>@supports</code> is a <a href="https://hacks.mozilla.org/2016/08/using-feature-queries-in-css/">powerful tool</a> which allows you to test for CSS support. If the property and value you test is supported then styles in the feature query will be applied. Else, they will be ignored –&nbsp;and it doesn’t crash the old <abbr title="Reader Mobile Software Development Kit">RMSDK</abbr>.</span>
+        		
+        		<span class="details-para">By leveraging feature queries, you can use all the modern CSS specs and be sure they won’t impact Reading Systems which dont support them. This is the super easy way to do progressive enhancement.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="pe" value="bewareMQ"/>
+        	<span class="checker"></span>
+        	<span class="summary">Beware of Media Queries</span>
+        	<span class="details">
+        		<span class="details-para"><a href="https://github.com/dvschultz/99problems/issues/44">Empty <code>@amzn-*</code> media queries crash the old <abbr title="Reader Mobile Software Development Kit">RMSDK</abbr></a>.</span>
+        		
+        		<span class="details-para"><a href="https://medium.com/@jiminypan/the-missing-eprdctn-specs-fcdc78038a90#.ly3zukc4t">Some Reading Systems report corrupted viewports</a> (either because of pagination implementation or use of CSS columns to fake a spread).</span>
+        		
+        		<span class="details-para">There is no love for media queries in eBooks right now and their use should probably be discouraged.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="pe" value="deviceAgnostic"/>
+        	<span class="checker"></span>
+        	<span class="summary">Don’t use Media Queries to target devices</span>
+        	<span class="details">
+        		<span class="details-para">If you really can’t do without Media Queries then <a href="https://responsivedesign.is/articles/why-you-dont-need-device-specific-breakpoints">don’t use them to target devices</a>.</span>
+        		
+        		<span class="details-para">Devices constantly ship in different form factors, display resolutions, viewport dimensions, etc. It’s just impossible to keep up in the long term.</span>
+        		
+        		<span class="details-para">Besides, what might work for iBooks iOS in landscape already backfires in a lot of other iOS apps. Same for iPhone, etc.</span>
+        	</span>
+        </label>
+      </div>
+      </section>
+
+
+      <section id="qa-list">
+      <div class="wrapper">
+        <h2 id="qa-heading">Quality Assurance</h2>
+
+        <label>
+        	<input type="checkbox" name="qa" value="crap"/>
+        	<span class="checker"></span>
+        	<span class="summary">Test on the crappiest app you can find</span>
+        	<span class="details">
+        		<span class="details-para">It’s the easiest way to make sure your eBook’s structure is bulletproof.</span>
+        		
+        		<span class="details-para">And quite sadly, millions of digital readers are using them….</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="qa" value="settings"/>
+        	<span class="checker"></span>
+        	<span class="summary">Change user settings to make sure everything is OK</span>
+        	<span class="details">
+        		<span class="details-para">Should be obvious by now.</span>        		
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="qa" value="frictions"/>
+        	<span class="checker"></span>
+        	<span class="summary">Eliminate friction</span>
+        	<span class="details">
+        		<span class="details-para">Have you ever wondered why some vendors open the eBook to the first chapter? Because readers gonna read.</span>
+        		
+        		<span class="details-para">Move front matter to back matter whenever possible. And in any case, don’t force the eBook to open before ten pages of front matter readers don’t want to read.</span>
+        	</span>
+        </label>
+     
+        <label>
+        	<input type="checkbox" name="qa" value="weight"/>
+        	<span class="checker"></span>
+        	<span class="summary">Consider the size of your EPUB&nbsp;file</span>
+        	<span class="details">
+        		<span class="details-para">Sure, eBookStores set an upper limit but does it mean you should publish a 650&nbsp;MB or 2&nbsp;GB file?</span>
+        		
+        		<span class="details-para">It’s a User eXperience issue: a huge file will probably take forever to download then bloat the user’s device, etc. Don’t forget a lot of Android devices out there currently ship with just 8–16&nbsp;GB of storage.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="qa" value="tts"/>
+        	<span class="checker"></span>
+        	<span class="summary">Try Text to Speech</span>
+        	<span class="details">
+        		<span class="details-para">It’s the easiest way to make sure you’re using ARIA properly.</span>
+        		
+        		<span class="details-para">Moreover, you could learn a lot, especially about how software understands your markup, styles and interactions. Now, don’t forget software can be the only link between the eBook’s contents and disabled users.</span>
+        	</span>
+        </label>
+        
+        <label>
+        	<input type="checkbox" name="qa" value="userTesting"/>
+        	<span class="checker"></span>
+        	<span class="summary">Organize user testing for experimental interactions</span>
+        	<span class="details">
+        		<span class="details-para">Ideas sometimes turn pretty badly into reality. If you don’t do user testing, you will discover that once it’s too late.</span>
+        		
+        		<span class="details-para">If you’re trying to improve User eXperience with functional interactions or extra features, you should get feedback as soon as the prototype is built. This is how design works, eBooks are not  snowflakes.</span>
+        	</span>
+        </label>
+      </div>
+      </section>
+      
+      <div id="controls">
+        <input type="reset" title="Limpiar checklist" value="↻" />
+        <input type="reset" title="Exportar como PDF" onclick="javascript:window.print()" value="Generar PDF" />
+      </div>
+    </form>
+  </main>
+
+  <footer>
+  	<img src="img/vamos-ba.png">
+  	<p class="secondary">Versión 1.0 | Hecho con ♡ en Buenos Aires. Basado en el checklist de <a href="https://github.com/FriendsOfEpub/eBookDesignChecklist">Friends of ePub</a></p>
+    <p class="secondary">Con la tecnología de <a href="https://github.com/FriendsOfEpub/Blitz">Blitz eBook Framework</a> | <a href="https://github.com/FriendsOfEpub/eBookDesignChecklist/blob/master/LICENSE">Licencia</a></p>
+  </footer>
+  
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript">
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/eBookDesignChecklist/sw.js', {scope: '/eBookDesignChecklist/'})
+  }  else if ('applicationCache' in window) {
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('src', '/eBookDesignChecklist/appcache.html');
+    iframe.setAttribute('style', 'width: 0; height: 0; border: 0');
+    document.querySelector('footer').appendChild(iframe);
+  }
+  </script>
+</body>
+</html>
