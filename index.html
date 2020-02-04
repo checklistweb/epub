@@ -62,9 +62,9 @@
     <p class="lead">Si encontrar algun error en este <i>checklist</i> o queres recomendar una modificación no dudes en avisar.</p>
   </header>
 
-  <main>
+ <input class="title-material" type="text" placeholder="Título del material" type="text" id="txt_1" onkeyup='saveValue(this);'/> 
 
-    <input class="title-material" type="text" placeholder="Título del material" type="text" id="txt_1" onkeyup='saveValue(this);'/> 
+  <main>
 
     <form id="checklist" name="checklist">
     <section id="tapa">
@@ -90,7 +90,6 @@
           	<span class="details-para">Que sean los mismos y que contrasten con el color de fondo de la propuesta.</span>
             </span>        
         </label>
-
 
 
         <label class="variable">
@@ -133,9 +132,11 @@
 
      <section id="interior">
     <div class="wrapper">
+
       	<img src="img/interior.png">
     <h2>Interior</h2>
-        
+
+
         <label class="variable">
             <label>
             <input type="checkbox" value="cabezal"/>
