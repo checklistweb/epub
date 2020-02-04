@@ -81,6 +81,20 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+.bloque {
+	border-radius: 12px;
+	padding: 1em;
+    -webkit-box-shadow: 0 0.175em 0.5em rgba(2,8,20,.1), 0 0.085em 0.175em rgba(2,8,20,.08);
+    box-shadow: 0 0.175em 0.5em rgba(2,8,20,.1), 0 0.085em 0.175em rgba(2,8,20,.08);
+}
+
+.alerta {
+	opacity: 0.8;
+	margin-left: auto;
+	display: block;
+}
+
+
 input,
 .variable,
 button {
